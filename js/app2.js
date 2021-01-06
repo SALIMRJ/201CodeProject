@@ -1,6 +1,13 @@
 'usestrict'; 
 var number = 12; 
-alert('You are going to play a guessing game. We have a number between 0 and 15. You should expect the number. You have six attempts');
+
+var list =['black','blue','red']
+alert('In this game you have to guess again which colors I prefer, and you have six attempts as well');
+console.log('In this game you have to guess again which colors I prefer, and you have six attempts as well');
+Mohammad2();
+m3();
+function Mohammad2(){
+    alert('You are going to play a guessing game. We have a number between 0 and 15. You should expect the number. You have six attempts');
 console.log('You are going to play a guessing game. We have a number between 0 and 15. You should expect the number. You have six attempts');
 var expect;
 var i;
@@ -33,29 +40,32 @@ alert('The correct ansser is 12 ');
 console.log('The correct ansser is 12 ');
 
 };
-var list =['black','blue','red']
-alert('In this game you have to guess again which colors I prefer, and you have six attempts as well');
-console.log('In this game you have to guess again which colors I prefer, and you have six attempts as well');
-
-var color ; 
-var i2 ;
-for(i2=1;i2<=6;i2++){
-color= prompt('Attempt '+i2+' ,enter color you guess');
-console.log('Attempt '+i2+' ,enter color you guess');
-switch(color.toLowerCase()){
- case list[0]:
- case list[1]:
- case list[2]:alert('Correct Ansser');console.log('Correct Ansser') ;i2=10;grade++; break; 
-     default: alert('Wrong Ansser'); console.log('Wrong Ansser');       
 }
 
+function m3(){
+    var color ; 
+    var i2 ;
+    for(i2=1;i2<=6;i2++){
+    color= prompt('Attempt '+i2+' ,enter color you guess');
+    console.log('Attempt '+i2+' ,enter color you guess');
+    switch(color.toLowerCase()){
+     case list[0]:
+     case list[1]:
+     case list[2]:alert('Correct Ansser');console.log('Correct Ansser') ;i2=10;grade++; break; 
+         default: alert('Wrong Ansser'); console.log('Wrong Ansser');       
+    }
+    
+    }
+    if(i2 ==7){
+    
+        alert('the colors is '+list);
+        console.log('the colors is '+list);
+    };
+    
+    alert('your grade is '+grade+' from 7');
+    console.log('your grade is '+grade+' from 7');
+
 }
-if(i2 ==7){
 
-    alert('the colors is '+list);
-    console.log('the colors is '+list);
-};
 
-alert('your grade is '+grade+' from 7');
-console.log('your grade is '+grade+' from 7');
 

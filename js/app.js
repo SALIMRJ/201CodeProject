@@ -6,9 +6,9 @@ while(userName==""||userName==null){
     userName =prompt('please enter your name !');
 
 }
-
-
-alert('Welcome, Mr.'+userName.toUpperCase() +', to my site Before viewing the page, there are some questions that we would like to answer');
+  Mohammad();
+    
+function Mohammad () {alert('Welcome, Mr.'+userName.toUpperCase() +', to my site Before viewing the page, there are some questions that we would like to answer');
 alert('Welcome, Mr.'+userName.toUpperCase() +', to my site Before viewing the page, there are some questions that we would like to answer');
 var Jordan = prompt('Is Jordan located in Asia??');
 console.log('Is Jordan located in Asia??');
@@ -80,3 +80,4 @@ console.log('Thank you, Mr. '+userName +', for answering the questions and for v
 
 
 
+}
